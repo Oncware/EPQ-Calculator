@@ -33,7 +33,6 @@ def calculate():
 root = tk.Tk()
 root.title("Inventory Planning Calculator")
 
-# Input fields
 ttk.Label(root, text="Demand:").grid(row=0, column=0, sticky="e")
 entry_demand = ttk.Entry(root)
 entry_demand.grid(row=0, column=1)
@@ -54,7 +53,6 @@ ttk.Label(root, text="Holding Percentage:").grid(row=4, column=0, sticky="e")
 entry_holding_percentage = ttk.Entry(root)
 entry_holding_percentage.grid(row=4, column=1)
 
-# Calculate button
 calculate_button = ttk.Button(root, text="Calculate", command=calculate)
 calculate_button.grid(row=5, column=0, columnspan=2)
 
