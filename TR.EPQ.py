@@ -33,7 +33,7 @@ def calculate():
 root = tk.Tk()
 root.title("Stok Planlama Hesaplayıcı")
 
-# Girdi alanları
+
 ttk.Label(root, text="Talep:").grid(row=0, column=0, sticky="e")
 entry_talep = ttk.Entry(root)
 entry_talep.grid(row=0, column=1)
@@ -54,7 +54,6 @@ ttk.Label(root, text="Elde Bulundurma Yüzdesi:").grid(row=4, column=0, sticky="
 entry_elde_bulundurma_yuzdesi = ttk.Entry(root)
 entry_elde_bulundurma_yuzdesi.grid(row=4, column=1)
 
-# Hesapla butonu
 calculate_button = ttk.Button(root, text="Hesapla", command=calculate)
 calculate_button.grid(row=5, column=0, columnspan=2)
 
